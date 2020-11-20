@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Card</title>
+        <style>
+            #green{
+                width: 100px;
+                height: 30px;
+                background-color: green;
+            }
+            #red{
+                width: 100px;
+                height: 30px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+        <form action="submit">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="enter your name">
+
+            <label for="Age">Age</label>
+            <input type="text" id="Age" placeholder="enter your Age">
+
+            <label for="Salary">Salary</label>
+            <input type="text" id="Salary" placeholder="enter your Salary">
+
+            <label for="tax">Tax</label>
+            <input type="text" id="tax" placeholder="enter your tax">
+           
+        </form>
+
+        <button  id="submit">Submit</button>
+    </div>
+        <div id="btn">
+        <button id="green">Green</button>
+        <button id="red">Red</button>
+    </div>
+    <div id="new_add">
+
+    </div>
+       
+    <script type="text/javascript">
+
+          var submit=document.getElementById("submit")
+
+          submit.addEventListener("click",collectData)
+
+          function collectData(){
+                   
+                    var h1=document.createElement("h2");
+                    h1=document.getElementById("name").value;
+
+                    var h2=document.createElement("h2");
+                    h2=document.getElementById("Age").value;
+
+                    var h3=document.createElement("h3");
+                    h3=document.getElementById("Salary").value;
+
+                    var h4=document.createElement("h3");
+                    h4=document.getElementById("tax").value;
+                   
+                    var add_new=document.getElementById("new_add");
+                    add_new.appendChild(h1)
+                   
+                   
+                    
+
+                   
+                    
+                    
+                   
+                    
+                    
+          }
+
+    </script>
+
+
+
+    </body>
+</html>
